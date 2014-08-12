@@ -10,26 +10,26 @@ Add in-app ambient notifications with growl-like alerts.
 
 Demo video at [http://youtu.be/Ee7aiKoDaGg](http://youtu.be/Ee7aiKoDaGg)
 
-## Demo Project
+## Installation
 
-The demo project uses SDWebImage as a git submodule. After you `git
-clone` this repo, do the following:
+####Using cocoapods:
 
-```bash
-git submodule init
-git submodule update
-```
+Follow these steps in order to use the CENotifier within your own Xcode 5+ project using CocoaPods. This is the easiest installation method if you are familiar with CocoaPods.
 
-This will clone SDWebImage into the project, and from there you should
-be able to compile the demo project.
+* Ensure that your Podfile is targeting :ios and "5.0" at minimum
+* Add a line containing `pod 'CENotifier', '~> 0.1'` to your Podfile.
+* Run `pod install` in the Terminal.
+* Add `#import <CENotifier/CENotifier.h>` to the file(s) you want
 
-## How To Use
+####If you prefer to clone the repo:
 
 Clone this repo and add the CENotifier.h/m and CENotifyView.h/m files
 to your project. These classes also depend on
 [SDWebImage](https://github.com/rs/SDWebImage), so follow the
 instructions there for installation if you don't already have it as
 part of your project.
+
+## How To Use
 
 Mostly you will interact with the `CENotifier` static methods to
 display notification in your app.
@@ -64,3 +64,17 @@ tapped.
 
 If the user taps the image part of the notification, it acts as a
 "cancel" action and a separate delegate message is sent in that case.
+
+## Demo Project
+
+The demo project uses SDWebImage as a git submodule. After you `git
+clone` this repo, do the following:
+
+```bash
+git submodule init
+git submodule update
+```
+
+This will clone SDWebImage into the project, and from there you should
+be able to compile the demo project.
+
