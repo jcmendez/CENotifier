@@ -71,12 +71,18 @@ static NSMutableArray *_onScreenViews;
         useImage = cachedImage;
     } else {
         useImage = [UIImage imageNamed:@"Icon"];
-        [manager downloadWithURL:[NSURL URLWithString:imageurl] options:0 progress:nil completed:nil];
-        [manager downloadWithURL:[NSURL URLWithString:imageurl] options:0 progress:nil completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, BOOL finished) {
-            if (image && finished) {
-                [manager.imageCache storeImage:image forKey:imageurl toDisk:YES];
-            }
-        }];
+//        [manager downloadImageWithURL:[NSURL URLWithString:imageurl]
+//                              options:SDWebImageContinueInBackground
+//                             progress:nil
+//                            completed:nil];
+        [manager downloadImageWithURL:[NSURL URLWithString:imageurl]
+                              options:SDWebImageContinueInBackground
+                             progress:nil
+                            completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, BOOL finished, NSURL *imageURL) {
+                              if (image && finished) {
+                                [manager.imageCache storeImage:image forKey:imageurl toDisk:YES];
+                              }
+                            }];
     }
 
     CENotifyView *nv = [[CENotifyView alloc] init];
@@ -355,8 +361,8 @@ static NSMutableArray *_onScreenViews;
 - (void)displayNotifications
 {
     if ([_queue count]) {
-        int i;
-        int max = [_queue count];
+        NSUInteger i;
+        NSUInteger max = [_queue count];
 
         for (i = 0; i < max; i++) {
             //pop off _queue

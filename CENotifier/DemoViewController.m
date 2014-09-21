@@ -61,8 +61,8 @@
         [randomText appendString:@"blah "];
     }
 
-    NSString *title = [NSString stringWithFormat:@"Notification #%d", _notifyCount];
-    NSString *text = [NSString stringWithFormat:@"Showing for %d seconds.\n%@", duration, randomText];
+    NSString *title = [NSString stringWithFormat:@"Notification #%ld", (long)_notifyCount];
+    NSString *text = [NSString stringWithFormat:@"Showing for %lu seconds.\n%@", (unsigned long)duration, randomText];
     NSDictionary *userInfo = @{
                                @"num": @(_notifyCount)
                                };

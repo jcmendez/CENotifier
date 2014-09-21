@@ -34,7 +34,7 @@
 
 + (CGSize)renderedSizeForText:(NSString *)text
 {
-    CGSize siz = [text sizeWithFont:[UIFont systemFontOfSize:14.0] constrainedToSize:CGSizeMake(300.0 - 40.0 - 5.0 - 10.0, FLT_MAX) lineBreakMode:UILineBreakModeWordWrap];
+    CGSize siz = [text sizeWithFont:[UIFont systemFontOfSize:14.0] constrainedToSize:CGSizeMake(300.0 - 40.0 - 5.0 - 10.0, FLT_MAX) lineBreakMode:NSLineBreakByWordWrapping];
 
 
     return siz;
@@ -42,7 +42,7 @@
 
 + (CGSize)renderedSizeForTitle:(NSString *)text
 {
-    CGSize siz = [text sizeWithFont:[UIFont boldSystemFontOfSize:18.0] constrainedToSize:CGSizeMake(300.0 - 40.0 - 5.0 - 10.0, FLT_MAX) lineBreakMode:UILineBreakModeWordWrap];
+    CGSize siz = [text sizeWithFont:[UIFont boldSystemFontOfSize:18.0] constrainedToSize:CGSizeMake(300.0 - 40.0 - 5.0 - 10.0, FLT_MAX) lineBreakMode:NSLineBreakByWordWrapping];
 
 
     return siz;
