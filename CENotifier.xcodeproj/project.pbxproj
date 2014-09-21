@@ -22,7 +22,6 @@
 		63007BE6177F7AA000B740EB /* DemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63007BE5177F7AA000B740EB /* DemoViewController.m */; };
 		63007BE9177F828600B740EB /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 63007BE7177F828600B740EB /* Icon.png */; };
 		63007BEA177F828600B740EB /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 63007BE8177F828600B740EB /* Icon@2x.png */; };
-		631927EB17A4E26600832813 /* NSData+GIF.m in Sources */ = {isa = PBXBuildFile; fileRef = 631927D117A4E26600832813 /* NSData+GIF.m */; };
 		631927EC17A4E26600832813 /* SDImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 631927D317A4E26600832813 /* SDImageCache.m */; };
 		631927ED17A4E26600832813 /* SDWebImageCompat.m in Sources */ = {isa = PBXBuildFile; fileRef = 631927D517A4E26600832813 /* SDWebImageCompat.m */; };
 		631927EE17A4E26600832813 /* SDWebImageDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 631927D717A4E26600832813 /* SDWebImageDecoder.m */; };
@@ -60,8 +59,6 @@
 		63007BE5177F7AA000B740EB /* DemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoViewController.m; sourceTree = "<group>"; };
 		63007BE7177F828600B740EB /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		63007BE8177F828600B740EB /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
-		631927D017A4E26600832813 /* NSData+GIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSData+GIF.h"; path = "CENotifier/Classes/SDWebImage/SDWebImage/NSData+GIF.h"; sourceTree = SOURCE_ROOT; };
-		631927D117A4E26600832813 /* NSData+GIF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSData+GIF.m"; path = "CENotifier/Classes/SDWebImage/SDWebImage/NSData+GIF.m"; sourceTree = SOURCE_ROOT; };
 		631927D217A4E26600832813 /* SDImageCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SDImageCache.h; path = CENotifier/Classes/SDWebImage/SDWebImage/SDImageCache.h; sourceTree = SOURCE_ROOT; };
 		631927D317A4E26600832813 /* SDImageCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SDImageCache.m; path = CENotifier/Classes/SDWebImage/SDWebImage/SDImageCache.m; sourceTree = SOURCE_ROOT; };
 		631927D417A4E26600832813 /* SDWebImageCompat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SDWebImageCompat.h; path = CENotifier/Classes/SDWebImage/SDWebImage/SDWebImageCompat.h; sourceTree = SOURCE_ROOT; };
@@ -176,8 +173,6 @@
 		63007BA9177F711F00B740EB /* SDWebImage */ = {
 			isa = PBXGroup;
 			children = (
-				631927D017A4E26600832813 /* NSData+GIF.h */,
-				631927D117A4E26600832813 /* NSData+GIF.m */,
 				631927D217A4E26600832813 /* SDImageCache.h */,
 				631927D317A4E26600832813 /* SDImageCache.m */,
 				631927D417A4E26600832813 /* SDWebImageCompat.h */,
@@ -280,7 +275,6 @@
 				63007BA7177F70FD00B740EB /* CENotifier.m in Sources */,
 				63007BA8177F70FD00B740EB /* CENotifyView.m in Sources */,
 				63007BE6177F7AA000B740EB /* DemoViewController.m in Sources */,
-				631927EB17A4E26600832813 /* NSData+GIF.m in Sources */,
 				631927EC17A4E26600832813 /* SDImageCache.m in Sources */,
 				631927ED17A4E26600832813 /* SDWebImageCompat.m in Sources */,
 				631927EE17A4E26600832813 /* SDWebImageDecoder.m in Sources */,
